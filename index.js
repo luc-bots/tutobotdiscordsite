@@ -18,10 +18,7 @@ client.on("messageCreate", message => {
     if (message.author.bot) return;
 
     if(message.content === prefix + "ping"){
-        const embed = new MessageEmbed()
-            .setColor("#2433eb")
-            .setDescription(`Pong !`)
-        message.channel.send({ embeds: [embed]});
+        message.channel.send("Pong !")
     }
 });
 
